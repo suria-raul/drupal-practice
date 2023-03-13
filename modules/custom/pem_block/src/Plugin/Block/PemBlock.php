@@ -14,7 +14,6 @@ class PemBlock extends BlockBase {
   public function build()
   {
     return [
-      '#type' => 'markup',
       '#markup' => $this->t("The Pem Block!"),
     ];
   }
