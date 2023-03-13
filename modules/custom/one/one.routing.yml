@@ -1,0 +1,7 @@
+one.index:
+  path: '/one/index'
+  defaults:
+    _controller: '\Drupal\one\Controller\OneController::index'
+    _title: 'One Index'
+  requirements:
+    _permission: 'access content'

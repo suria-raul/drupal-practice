@@ -1,0 +1,9 @@
+<?php
+
+function one_theme() {
+  return [
+    'one_page' => [
+      'render element' => 'page',
+    ]
+  ];
+}
