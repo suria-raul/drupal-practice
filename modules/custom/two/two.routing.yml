@@ -1,7 +1,7 @@
 two.example:
   path: '/two/example'
   defaults:
-    _title: 'Example'
+    _title: 'Two Controller'
     _controller: '\Drupal\two\Controller\TwoController::build'
   requirements:
     _permission: 'access content'

@@ -1,0 +1,5 @@
+name: Pem Block
+description: Practice Custom block
+type: module
+core_version_requirement: ^10
+package: Custom
