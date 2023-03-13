@@ -1,0 +1,5 @@
+name: two
+type: module
+description: Controller created using drush command
+package: Custom
+core_version_requirement: ^9 || ^10
