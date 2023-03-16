@@ -5,31 +5,44 @@ namespace Drupal\dog\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
+/**
+ * Configuration form for a dog entity type.
+ */
 class DogSettingsForm extends FormBase {
 
+  /**
+   * {@inheritdoc}
+   */
   public function getFormId() {
     return 'dog_settings';
   }
 
+  /**
+   * {@inheritdoc}
+   */
   public function buildForm(array $form, FormStateInterface $form_state) {
+
     $form['settings'] = [
-      '#markup' => $this->t("Configure your custom content entity here"),
+      '#markup' => $this->t('Settings form for a dog entity type.'),
     ];
 
     $form['actions'] = [
-      '#type' => 'action',
+      '#type' => 'actions',
     ];
 
     $form['actions']['submit'] = [
       '#type' => 'submit',
-      '#value' => $this->t('save'),
+      '#value' => $this->t('Save'),
     ];
 
     return $form;
   }
 
+  /**
+   * {@inheritdoc}
+   */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $this->messenger()->addMessage($this->t("Form submitted!"));
+    $this->messenger()->addStatus($this->t('The configuration has been updated.'));
   }
 
 }

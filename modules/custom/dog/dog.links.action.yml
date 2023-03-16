@@ -1,5 +1,5 @@
-entity.dog.add:
-  title: 'Add'
+dog.add_form:
+  title: 'Add dog'
   route_name: entity.dog.add_form
-#  appears_on:
-#    - entity.dog.collection
+  appears_on:
+    - entity.dog.collection

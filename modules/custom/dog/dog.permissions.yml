@@ -9,3 +9,15 @@ delete dog:
   title: 'Delete dog'
 create dog:
   title: 'Create dog'
+
+administer dog:
+  title: 'Administer dog settings'
+  restrict access: true
+delete dog:
+  title: Delete dog
+create dog:
+  title: Create dog
+view dog:
+  title: View dog
+edit dog:
+  title: Edit dog

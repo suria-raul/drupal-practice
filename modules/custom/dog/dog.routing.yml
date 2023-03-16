@@ -1,7 +1,7 @@
 entity.dog.settings:
-  path: '/admin/structure/dog'
+  path: 'admin/structure/dog'
   defaults:
-    _form: 'Drupal\dog\Form\DogSettingsForm'
-    _title: 'Settings'
+    _form: '\Drupal\dog\Form\DogSettingsForm'
+    _title: 'Dog'
   requirements:
     _permission: 'administer dog'

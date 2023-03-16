@@ -2,10 +2,10 @@ entity.dog.settings:
   title: 'Settings'
   route_name: entity.dog.settings
   base_route: entity.dog.settings
-#entity.dog.collection:
-#  title: 'Dogs'
-#  route_name: entity.dog.collection
-#  base_route: system.admin_content
+entity.dog.collection:
+  title: 'Dogs'
+  route_name: entity.dog.collection
+  base_route: system.admin_content
 entity.dog.view:
   title: 'View'
   route_name: entity.dog.canonical
