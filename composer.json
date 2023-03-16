@@ -24,6 +24,7 @@
         "drupal/gin": "^3.0@rc",
         "drupal/gin_toolbar": "^1.0@rc",
         "drupal/pathauto": "^1.11",
+        "drupal/routes_list": "^6.2",
         "drush/drush": "^11.5",
         "kint-php/kint": "^3.3",
         "symfony/var-dumper": "^6.2"

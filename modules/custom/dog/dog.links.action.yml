@@ -1,0 +1,5 @@
+entity.dog.add:
+  title: 'Add'
+  route_name: entity.dog.add_form
+#  appears_on:
+#    - entity.dog.collection

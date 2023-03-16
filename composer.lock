@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8f03706c9e52b0fd64728bce5e383e1",
+    "content-hash": "c234a5b546bc9eb4beaed9c67f463a5a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2091,6 +2091,56 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/routes_list",
+            "version": "6.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/routes_list.git",
+                "reference": "8.x-6.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/routes_list-8.x-6.2.zip",
+                "reference": "8.x-6.2",
+                "shasum": "9177d897e40d04b257f3fcf53a02f7bef683aa79"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-6.2",
+                    "datestamp": "1661302497",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "George Anderson (geoanders)",
+                    "homepage": "https://www.drupal.org/u/geoanders",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Ruslan Isay (IRuslan)",
+                    "homepage": "https://www.drupal.org/u/iruslan"
+                }
+            ],
+            "description": "Overview of all registered routes.",
+            "homepage": "https://www.drupal.org/project/routes_list",
+            "support": {
+                "source": "https://git.drupalcode.org/project/routes_list",
+                "issues": "https://www.drupal.org/project/issues/routes_list"
             }
         },
         {

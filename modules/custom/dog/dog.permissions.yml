@@ -1,0 +1,11 @@
+administer dog:
+  title: 'Administer dog'
+  restrict access: true
+view dog:
+  title: 'View dog'
+edit dog:
+  title: 'Edit dog'
+delete dog:
+  title: 'Delete dog'
+create dog:
+  title: 'Create dog'

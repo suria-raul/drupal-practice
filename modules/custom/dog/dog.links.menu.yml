@@ -1,0 +1,9 @@
+entity.dog.settings:
+  title: 'Dog'
+  description: 'Configure the dog content entity'
+  route_name: entity.dog.settings
+  parent: system.admin_structure
+#entity.dog.collection:
+#  title: 'Dogs'
+#  route_name: entity.dog.collection
+#  parent: system.admin_content

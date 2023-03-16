@@ -1,0 +1,20 @@
+entity.dog.settings:
+  title: 'Settings'
+  route_name: entity.dog.settings
+  base_route: entity.dog.settings
+#entity.dog.collection:
+#  title: 'Dogs'
+#  route_name: entity.dog.collection
+#  base_route: system.admin_content
+entity.dog.view:
+  title: 'View'
+  route_name: entity.dog.canonical
+  base_route: entity.dog.canonical
+entity.dog.edit:
+  title: 'Edit'
+  route_name: entity.dog.edit_form
+  base_route: entity.dog.canonical
+entity.dog.delete:
+  title: 'Delete'
+  route_name: entity.dog.delete_form
+  base_route: entity.dog.canonical
