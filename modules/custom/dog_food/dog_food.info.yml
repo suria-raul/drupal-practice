@@ -1,0 +1,5 @@
+name: dog_food
+type: module
+description: The dog food custom field
+package: Custom
+core_version_requirement: ^9 || ^10

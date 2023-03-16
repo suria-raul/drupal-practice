@@ -1,0 +1,9 @@
+
+# Default value.
+field.value.dog_food:
+  type: mapping
+  label: Default value
+  mapping:
+    food_name:
+      type: text
+      label: Food name
