@@ -1,0 +1,92 @@
+<?php
+
+/**
+ * @file
+ * Provides an ewd entity type.
+ */
+
+use Drupal\Core\Render\Element;
+use Drupal\ewd\Entity\Ewd;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function ewd_theme() {
+  return [
+    'ewd' => [
+      'render element' => 'elements',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for ewd templates.
+ *
+ * Default template: ewd.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the ewd information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_ewd(array &$variables) {
+  $variables['view_mode'] = $variables['elements']['#view_mode'];
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Implements hook_user_cancel().
+ */
+function ewd_user_cancel($edit, UserInterface $account, $method) {
+  switch ($method) {
+    case 'user_cancel_block_unpublish':
+      // Unpublish ewds.
+      $storage = \Drupal::entityTypeManager()->getStorage('ewd');
+      $ewd_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->condition('status', 1)
+        ->execute();
+      foreach ($storage->loadMultiple($ewd_ids) as $ewd) {
+        $ewd->set('status', FALSE);
+        $ewd->save();
+      }
+      break;
+
+    case 'user_cancel_reassign':
+      // Anonymize ewds.
+      $storage = \Drupal::entityTypeManager()->getStorage('ewd');
+      $ewd_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->execute();
+      foreach ($storage->loadMultiple($ewd_ids) as $ewd) {
+        $ewd->setOwnerId(0);
+        $ewd->save();
+      }
+      break;
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_predelete() for user entities.
+ */
+function ewd_user_predelete(UserInterface $account) {
+  // Delete ewds.
+  $storage = \Drupal::entityTypeManager()->getStorage('ewd');
+  $ewd_ids = $storage->getQuery()
+    ->condition('uid', $account->id())
+    ->execute();
+  $ewds = $storage->loadMultiple($ewd_ids);
+  $storage->delete($ewds);
+  // Delete old revisions.
+  $ewd_ids = $storage->getQuery()
+    ->allRevisions()
+    ->condition('uid', $account->id())
+    ->execute();
+  foreach (array_keys($ewd_ids) as $revision_id) {
+    $storage->deleteRevision($revision_id);
+  }
+}

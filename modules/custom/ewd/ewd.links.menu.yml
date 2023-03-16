@@ -1,0 +1,5 @@
+entity.ewd_type.collection:
+  title: 'Ewd types'
+  description: 'Manage and CRUD actions on Ewd type.'
+  parent: system.admin_structure
+  route_name: entity.ewd_type.collection

@@ -1,0 +1,5 @@
+name: ewd
+type: module
+description: Custom content entity created by drush with dependencies
+package: Custom
+core_version_requirement: ^9 || ^10

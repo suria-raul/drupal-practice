@@ -1,0 +1,12 @@
+administer ewd types:
+  title: 'Administer ewd types'
+  description: 'Maintain the types of ewd entity.'
+  restrict access: true
+delete ewd:
+  title: Delete ewd
+create ewd:
+  title: Create ewd
+view ewd:
+  title: View ewd
+edit ewd:
+  title: Edit ewd

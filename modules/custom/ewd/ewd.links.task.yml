@@ -1,0 +1,26 @@
+entity.ewd.view:
+  title: 'View'
+  route_name: entity.ewd.canonical
+  base_route: entity.ewd.canonical
+entity.ewd.edit_form:
+  title: 'Edit'
+  route_name: entity.ewd.edit_form
+  base_route: entity.ewd.canonical
+entity.ewd.delete_form:
+  title: 'Delete'
+  route_name: entity.ewd.delete_form
+  base_route: entity.ewd.canonical
+  weight: 10
+entity.ewd.collection:
+  title: 'Ewds'
+  route_name: entity.ewd.collection
+  base_route: system.admin_content
+  weight: 10
+entity.ewd_type.edit_form:
+  title: 'Edit'
+  route_name: entity.ewd_type.edit_form
+  base_route: entity.ewd_type.edit_form
+entity.ewd_type.collection:
+  title: 'List'
+  route_name: entity.ewd_type.collection
+  base_route: entity.ewd_type.collection

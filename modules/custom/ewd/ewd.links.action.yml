@@ -1,0 +1,11 @@
+ewd.type_add:
+  title: 'Add ewd type'
+  route_name: entity.ewd_type.add_form
+  appears_on:
+    - entity.ewd_type.collection
+
+ewd.add_page:
+  title: 'Add ewd'
+  route_name: entity.ewd.add_page
+  appears_on:
+    - entity.ewd.collection
