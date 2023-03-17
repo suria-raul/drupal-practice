@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c234a5b546bc9eb4beaed9c67f463a5a",
+    "content-hash": "36bb33aecfd472800d713ee7cba49ab8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1376,17 +1376,121 @@
             "time": "2023-02-03T11:13:07+00:00"
         },
         {
-            "name": "drupal/core",
-            "version": "10.0.4",
+            "name": "drupal/bootstrap5",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/drupal/core.git",
-                "reference": "d4051f23e51522703e3c26ecbc147449ba88eccc"
+                "url": "https://git.drupalcode.org/project/bootstrap5.git",
+                "reference": "3.0.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/d4051f23e51522703e3c26ecbc147449ba88eccc",
-                "reference": "d4051f23e51522703e3c26ecbc147449ba88eccc",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap5-3.0.5.zip",
+                "reference": "3.0.5",
+                "shasum": "c4a4c01b7dd292e3fe1031be1c6b0224e1f4ee1d"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.5",
+                    "datestamp": "1677943395",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Roudakov (vladimiraus)",
+                    "homepage": "https://www.drupal.org/u/vladimiraus",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "VladimirAus",
+                    "homepage": "https://www.drupal.org/user/673120"
+                }
+            ],
+            "description": "Master theme using Bootstrap 5: powerful front-end framework for faster and easier web development.",
+            "homepage": "https://www.drupal.org/project/bootstrap5",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap5",
+                "issues": "https://www.drupal.org/project/issues/bootstrap5"
+            }
+        },
+        {
+            "name": "drupal/bootstrap_barrio",
+            "version": "5.5.9",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
+                "reference": "5.5.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.5.9.zip",
+                "reference": "5.5.9",
+                "shasum": "99b5d4431259a5ed04e7f9a09179a88ff57f31da"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10",
+                "twbs/bootstrap": "^5.0.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "5.5.9",
+                    "datestamp": "1674098246",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alberto Siles",
+                    "homepage": "https://www.drupal.org/user/827704",
+                    "email": "alberto@siles.pe"
+                },
+                {
+                    "name": "Ricardo.Castaneda",
+                    "homepage": "https://www.drupal.org/user/3520894"
+                },
+                {
+                    "name": "WillAcon",
+                    "homepage": "https://www.drupal.org/user/2824325"
+                }
+            ],
+            "description": "Bootstrap 5 base theme.",
+            "homepage": "https://www.drupal.org/project/bootstrap_barrio",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_barrio"
+            }
+        },
+        {
+            "name": "drupal/core",
+            "version": "10.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core.git",
+                "reference": "dad1e9f8e98bd7818ffc37b41cf4d7e483048b43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drupal/core/zipball/dad1e9f8e98bd7818ffc37b41cf4d7e483048b43",
+                "reference": "dad1e9f8e98bd7818ffc37b41cf4d7e483048b43",
                 "shasum": ""
             },
             "require": {
@@ -1529,22 +1633,22 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/10.0.4"
+                "source": "https://github.com/drupal/core/tree/10.0.5"
             },
-            "time": "2023-03-01T14:01:00+00:00"
+            "time": "2023-03-15T14:30:13+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.0.4",
+            "version": "10.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "e3f17745ab88a919f5179e6d9c1ac8ce77d3845f"
+                "reference": "5ff3916feeeecd15f982803fc2203559623e5ae0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/e3f17745ab88a919f5179e6d9c1ac8ce77d3845f",
-                "reference": "e3f17745ab88a919f5179e6d9c1ac8ce77d3845f",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/5ff3916feeeecd15f982803fc2203559623e5ae0",
+                "reference": "5ff3916feeeecd15f982803fc2203559623e5ae0",
                 "shasum": ""
             },
             "require": {
@@ -1579,13 +1683,13 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.0.4"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.0.5"
             },
-            "time": "2022-07-01T08:33:05+00:00"
+            "time": "2023-03-09T21:24:32+00:00"
         },
         {
             "name": "drupal/core-project-message",
-            "version": "10.0.4",
+            "version": "10.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -1620,22 +1724,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/10.0.4"
+                "source": "https://github.com/drupal/core-project-message/tree/10.0.5"
             },
             "time": "2022-07-01T08:33:05+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "10.0.4",
+            "version": "10.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "88f1c7796f6f610a2cf7dffc354dd6f6abf2ccfb"
+                "reference": "a4a5c5290ff90ce1eb2aa31dc4913cb29e9679a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/88f1c7796f6f610a2cf7dffc354dd6f6abf2ccfb",
-                "reference": "88f1c7796f6f610a2cf7dffc354dd6f6abf2ccfb",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/a4a5c5290ff90ce1eb2aa31dc4913cb29e9679a3",
+                "reference": "a4a5c5290ff90ce1eb2aa31dc4913cb29e9679a3",
                 "shasum": ""
             },
             "require": {
@@ -1643,7 +1747,7 @@
                 "composer/semver": "~3.3.2",
                 "doctrine/annotations": "~1.13.3",
                 "doctrine/lexer": "~1.2.3",
-                "drupal/core": "10.0.4",
+                "drupal/core": "10.0.5",
                 "egulias/email-validator": "~3.2.1",
                 "guzzlehttp/guzzle": "~7.5.0",
                 "guzzlehttp/promises": "~1.5.2",
@@ -1699,13 +1803,13 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/10.0.4"
+                "source": "https://github.com/drupal/core-recommended/tree/10.0.5"
             },
-            "time": "2023-03-01T14:01:00+00:00"
+            "time": "2023-03-15T14:30:13+00:00"
         },
         {
             "name": "drupal/core-vendor-hardening",
-            "version": "9.5.4",
+            "version": "9.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-vendor-hardening.git",
@@ -1740,7 +1844,7 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-vendor-hardening/tree/9.5.4"
+                "source": "https://github.com/drupal/core-vendor-hardening/tree/9.5.5"
             },
             "time": "2022-12-07T11:22:43+00:00"
         },
@@ -6583,6 +6687,56 @@
                 }
             ],
             "time": "2023-02-16T09:57:23+00:00"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v5.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "cb021439c683d9805e2864c58095b92d405e9b11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/cb021439c683d9805e2864c58095b92d405e9b11",
+                "reference": "cb021439c683d9805e2864c58095b92d405e9b11",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                },
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "https://getbootstrap.com/",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "web"
+            ],
+            "support": {
+                "issues": "https://github.com/twbs/bootstrap/issues",
+                "source": "https://github.com/twbs/bootstrap/tree/v5.2.3"
+            },
+            "time": "2022-11-21T18:19:01+00:00"
         },
         {
             "name": "twig/twig",
