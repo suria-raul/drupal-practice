@@ -47,3 +47,4 @@ sites/simpletest
 
 .idea
 .ddev
+.env

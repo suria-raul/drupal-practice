@@ -81,8 +81,7 @@ class Ewd extends RevisionableContentEntityBase implements EwdInterface {
   public function preSave(EntityStorageInterface $storage) {
     parent::preSave($storage);
     if (!$this->getOwnerId()) {
-      // If no owner has been set explicitly, make the anonymous user the owner.
-      $this->setOwnerId(0);
+      $this->setOwnerId(\Drupal::currentUser()->id());
     }
   }
 
