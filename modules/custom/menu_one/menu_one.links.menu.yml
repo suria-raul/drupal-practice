@@ -1,0 +1,11 @@
+menu_one_first:
+  title: 'Menu One Testing menu'
+  description: 'The description'
+  route_name: menu_one.first
+  parent: system.admin_config_system
+  options:
+    attributes:
+      target: _blank
+      class:
+        - random-one
+        - random-two

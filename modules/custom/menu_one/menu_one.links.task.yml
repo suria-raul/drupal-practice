@@ -1,0 +1,11 @@
+menu_one.task:
+  title: 'Menu one tab'
+  route_name: menu_one.first
+  base_route: entity.user.collection
+  weight: 12
+
+menu_one.task_two:
+  title: 'Menu one tab'
+  route_name: menu_one.first
+  base_route: system.modules_list
+  weight: 12

@@ -27,6 +27,7 @@
         "drupal/gin_toolbar": "^1.0@rc",
         "drupal/pathauto": "^1.11",
         "drupal/routes_list": "^6.2",
+        "drupal/webprofiler": "^10.0",
         "drush/drush": "^11.5",
         "kint-php/kint": "^3.3",
         "symfony/var-dumper": "^6.2"

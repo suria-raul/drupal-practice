@@ -1,0 +1,15 @@
+menu_one.first:
+  path: '/menu-one-markup'
+  defaults:
+    _controller: 'Drupal\menu_one\Controller\MenuOneController::index'
+    _title: 'Menu One Marked up Page'
+  requirements:
+    _permission: 'access content'
+
+menu_one.second:
+  path: '/contextual-testing'
+  defaults:
+    _controller: 'Drupal\menu_one\Controller\MenuOneController::contextualTesting'
+    _title: 'Contextual testing'
+  requirements:
+    _permission: 'access content'

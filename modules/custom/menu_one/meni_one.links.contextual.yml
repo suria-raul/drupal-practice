@@ -1,0 +1,4 @@
+menu_one.first_contextual:
+  title: 'Contextual testing'
+  route_name: menu_one.second
+  group: 'random'

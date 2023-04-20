@@ -1,0 +1,5 @@
+name: Menu One
+description: A Test menu to be added in structure or anywhere in cms
+type: module
+core_version_requirement: ^9 || ^10
+package: Custom

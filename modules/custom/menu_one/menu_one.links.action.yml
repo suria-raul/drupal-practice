@@ -1,0 +1,8 @@
+menu_one.action:
+  title: 'Go to menu one markup'
+  route_name: menu_one.first
+  weight: 10
+  appears_on:
+    - entity.user.collection
+    - system.admin_content
+    - system.modules_list
