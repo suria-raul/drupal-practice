@@ -22,9 +22,9 @@ use Drupal\user\EntityOwnerTrait;
  *      "edit" = "Drupal\plane\Form\PlaneForm",
  *      "delete" = "Drupal\Core\Entity\ContentEntityDeleteForm",
  *    },
- *    route_provider = {
- *      "html" = "Drupal\Core\Entity\Routing\AdminHtmlRouteProvider",
- *    },
+ *    "route_provider" = {
+ *       "html" = "Drupal\Core\Entity\Routing\AdminHtmlRouteProvider",
+ *    }
  *   },
  *   base_table = "plane",
  *   admin_permission = "administer plane",
@@ -48,14 +48,21 @@ class Plane extends ContentEntityBase implements PlaneInterface {
 
   use EntityOwnerTrait;
 
-  public static function baseFieldDefinitions(EntityTypeInterface $entity_type)
-  {
+  public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
     $fields = parent::baseFieldDefinitions($entity_type);
 
     $fields['model'] = BaseFieldDefinition::create('string')
       ->setLabel(t("Model"))
       ->setDescription(t("The Model of the aircraft"))
-      ->setRequired(TRUE);
+      ->setRequired(TRUE)
+      ->setDisplayOptions('form', [
+        '#type' => 'textfield',
+      ])
+      ->setDisplayOptions('view', [
+        '#type' => 'string',
+      ])
+      ->setDisplayConfigurable('form', true)
+      ->setDisplayConfigurable('view', true);
 
     $fields['uid'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t("Author"))

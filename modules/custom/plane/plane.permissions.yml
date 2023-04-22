@@ -1,0 +1,11 @@
+administer plane:
+  title: Administer Plane
+  restrict access: true
+view plane:
+  title: View Plane
+edit plane:
+  title: Edit Plane
+delete plane:
+  title: Delete Plane
+create plane:
+  title: Create Plane

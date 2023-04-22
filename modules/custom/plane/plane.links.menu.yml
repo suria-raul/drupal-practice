@@ -1,0 +1,10 @@
+entity.plane.settings:
+  title: 'Plane'
+  description: 'The Plane Entity settings'
+  route_name: entity.plane.settings
+  parent: system.admin_structure
+entity.plane.collection:
+  title: 'Planes'
+  description: 'The Plane Entity Collections'
+  route_name: entity.plane.collection
+  parent: system.admin_content

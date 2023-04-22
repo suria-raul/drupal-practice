@@ -1,0 +1,7 @@
+entity.plane.settings:
+  path: 'admin/structure/plane'
+  defaults:
+    _title: 'Settings'
+    _form: '\Drupal\plane\Form\PlaneSettingsForm'
+  requirements:
+    _permission: 'administer plane'

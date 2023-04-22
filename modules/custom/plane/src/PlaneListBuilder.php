@@ -13,7 +13,7 @@ class PlaneListBuilder extends EntityListBuilder {
   }
 
   public function buildRow(EntityInterface $entity) {
-    $row['model'] = $entity->toLink();
+    $row['label'] = $entity->toLink();
     return $row + parent::buildRow($entity);
   }
 

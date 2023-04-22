@@ -1,0 +1,5 @@
+plane.add_form:
+  title: 'Add Plane'
+  route_name: entity.plane.add_form
+  appears_on:
+    - entity.plane.collection
