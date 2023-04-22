@@ -1,20 +1,22 @@
-entity.plane.collection:
-  title: 'Planes'
-  route_name: entity.plane.collection
-  base_route: system.admin_content
-entity.plane.canonical:
-  title: 'View'
-  route_name: entity.plane.canonical
-  base_route: entity.plane.canonical
-entity.plane.edit:
-  title: 'Edit'
-  route_name: entity.plane.edit_form
-  base_route: entity.plane.canonical
-entity.plane.delete:
-  title: 'Delete'
-  route_name: entity.plane.delete_form
-  base_route: entity.plane.canonical
 entity.plane.settings:
   title: 'Settings'
   route_name: entity.plane.settings
   base_route: entity.plane.settings
+entity.plane.view:
+  title: 'View'
+  route_name: entity.plane.canonical
+  base_route: entity.plane.canonical
+entity.plane.edit_form:
+  title: 'Edit'
+  route_name: entity.plane.edit_form
+  base_route: entity.plane.canonical
+entity.plane.delete_form:
+  title: 'Delete'
+  route_name: entity.plane.delete_form
+  base_route: entity.plane.canonical
+  weight: 10
+entity.plane.collection:
+  title: 'Planes'
+  route_name: entity.plane.collection
+  base_route: system.admin_content
+  weight: 10

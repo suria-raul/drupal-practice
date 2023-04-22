@@ -1,10 +1,10 @@
 entity.plane.settings:
   title: 'Plane'
-  description: 'The Plane Entity settings'
-  route_name: entity.plane.settings
+  description: 'Configure a Plane entity type.'
+  route_name:  entity.plane.settings
   parent: system.admin_structure
 entity.plane.collection:
   title: 'Planes'
-  description: 'The Plane Entity Collections'
+  description: 'List of planes.'
   route_name: entity.plane.collection
   parent: system.admin_content
