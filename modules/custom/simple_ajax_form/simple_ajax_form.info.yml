@@ -1,0 +1,5 @@
+name: Simple Ajax Form
+description: Just Simple Ajax Form Custom Module
+type: module
+core_version_requirement: ^9 || ^10
+package: Custom
