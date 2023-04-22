@@ -1,0 +1,7 @@
+entity.pet.settings:
+  path: 'admin/structure/pet'
+  defaults:
+    _form: '\Drupal\pet\Form\PetSettingsForm'
+    _title: 'Pet Settings'
+  requirements:
+    _permission: 'administer pet'

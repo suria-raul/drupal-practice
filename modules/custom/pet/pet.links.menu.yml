@@ -1,0 +1,9 @@
+entity.pet.settings:
+  title: 'Pet'
+  description: 'Settings for Pet Entity'
+  route_name: entity.pet.settings
+  parent: system.admin_structure
+entity.pet.collection:
+  title: 'Pets'
+  route_name: entity.pet.collection
+  parent: system.admin_content

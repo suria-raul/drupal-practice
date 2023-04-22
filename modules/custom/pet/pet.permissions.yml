@@ -1,0 +1,11 @@
+administer pet:
+  title: Administer pet
+  restrict access: true
+view pet:
+  title: View Pet
+edit pet:
+  title: Edit Pet
+delete pet:
+  title: Delete Pet
+create pet:
+  title: Create Pet

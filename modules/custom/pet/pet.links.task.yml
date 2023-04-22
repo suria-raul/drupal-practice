@@ -1,0 +1,20 @@
+entity.pet.collection:
+  title: 'Pets'
+  route_name: entity.pet.collection
+  base_route: system.admin_content
+entity.pet.canonical:
+  title: 'View'
+  route_name: entity.pet.canonical
+  base_route: entity.pet.canonical
+entity.pet.edit:
+  title: 'Edit'
+  route_name: entity.pet.edit_form
+  base_route: entity.pet.canonical
+entity.pet.delete:
+  title: 'Delete'
+  route_name: entity.pet.delete_form
+  base_route: entity.pet.canonical
+entity.pet.settings:
+  title: 'Settings'
+  route_name: entity.pet.settings
+  base_route: entity.pet.settings
