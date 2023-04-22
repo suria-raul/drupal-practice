@@ -66,7 +66,7 @@ class Pet extends ContentEntityBase implements PetInterface {
 
     $fields['name'] = BaseFieldDefinition::create('string')
       ->setLabel(t("Name"))
-      ->setDescription(t("The name of your pet"))
+      ->setDescription(t("Pet's Name"))
       ->setRequired(true)
       ->setDisplayOptions('form', [
         'type' => 'string_textfield'
@@ -80,7 +80,7 @@ class Pet extends ContentEntityBase implements PetInterface {
 
     $fields['age'] = BaseFieldDefinition::create('integer')
       ->setLabel(t("Age"))
-      ->setDescription(t("The age of your pet"))
+      ->setDescription(t("Pet's Age"))
       ->setRequired(TRUE)
       ->setDisplayOptions('form', [
         'type' => 'number'
