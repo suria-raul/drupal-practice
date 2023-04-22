@@ -39,7 +39,7 @@ use Drupal\user\EntityOwnerTrait;
  *   admin_permission = "administer pet",
  *   entity_keys = {
  *     "id" = "id",
- *     "label" = "label",
+ *     "label" = "name",
  *     "uuid" = "uuid",
  *     "owner" = "uid",
  *   },

@@ -2,20 +2,43 @@
 
 namespace Drupal\pet\Form;
 
-use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Entity\ContentEntityForm;
+use Drupal\Core\Form\FormStateInterface;
 
+/**
+ * Form controller for the pet entity edit forms.
+ */
 class PetForm extends ContentEntityForm {
 
-  public function submitForm(array &$form, FormStateInterface $form_state) {
+  /**
+   * {@inheritdoc}
+   */
+  public function save(array $form, FormStateInterface $form_state) {
     $result = parent::save($form, $form_state);
 
     $entity = $this->getEntity();
-    $message = $this->t("%label pet has been added", ['%label' => $entity->label()]);
-    $this->messenger()->addMessage($message);
+
+    $message_arguments = ['%label' => $entity->toLink()->toString()];
+    $logger_arguments = [
+      '%label' => $entity->label(),
+      'link' => $entity->toLink($this->t('View'))->toString(),
+    ];
+
+    switch ($result) {
+      case SAVED_NEW:
+        $this->messenger()->addStatus($this->t('New pet %label has been created.', $message_arguments));
+        $this->logger('pet')->notice('Created new pet %label', $logger_arguments);
+        break;
+
+      case SAVED_UPDATED:
+        $this->messenger()->addStatus($this->t('The pet %label has been updated.', $message_arguments));
+        $this->logger('pet')->notice('Updated pet %label.', $logger_arguments);
+        break;
+    }
 
     $form_state->setRedirect('entity.pet.collection');
 
     return $result;
   }
+
 }
