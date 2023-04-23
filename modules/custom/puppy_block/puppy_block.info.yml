@@ -1,0 +1,5 @@
+name: puppy_block
+type: module
+description: The Puppy Block Created using drush generate
+package: Custom
+core_version_requirement: ^9 || ^10

@@ -1,0 +1,7 @@
+block.settings.puppy_block:
+  type: block_settings
+  label: 'PuppyBlock block'
+  mapping:
+    foo:
+      type: string
+      label: Foo
