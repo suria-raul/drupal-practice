@@ -6,4 +6,5 @@ entity.fox.settings:
 entity.fox.collection:
   title: 'Foxes'
   route_name: entity.fox.collection
-  parent: system.admin_content
+  parent: system.admin
+  weight: -10

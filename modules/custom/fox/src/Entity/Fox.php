@@ -35,7 +35,7 @@ use Drupal\fox\FoxInterface;
  *     "owner" = "uid"
  *   },
  *   links = {
- *     "collection" = "/admin/content/foxes",
+ *     "collection" = "/admin/foxes",
  *     "canonical" = "/fox/{fox}",
  *     "add-form" = "/fox/add",
  *     "edit-form" = "/fox/{fox}/edit",

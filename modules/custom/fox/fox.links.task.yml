@@ -1,7 +1,7 @@
-entity.fox.collection:
-  title: 'Foxes'
-  route_name: entity.fox.collection
-  base_route: system.admin_content
+#entity.fox.collection:
+#  title: 'Foxes'
+#  route_name: entity.fox.collection
+#  base_route: system.admin_content
 entity.fox.canonical:
   title: 'View'
   route_name: entity.fox.canonical
