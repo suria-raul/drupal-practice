@@ -1,0 +1,20 @@
+entity.fox.collection:
+  title: 'Foxes'
+  route_name: entity.fox.collection
+  base_route: system.admin_content
+entity.fox.canonical:
+  title: 'View'
+  route_name: entity.fox.canonical
+  base_route: entity.fox.canonical
+entity.fox.edit:
+  title: 'Edit'
+  route_name: entity.fox.edit_form
+  base_route: entity.fox.canonical
+entity.fox.delete:
+  title: 'Delete'
+  route_name: entity.fox.delete_form
+  base_route: entity.fox.canonical
+entity.fox.settings:
+  title: 'Settings'
+  route_name: entity.fox.settings
+  base_route: entity.fox.settings

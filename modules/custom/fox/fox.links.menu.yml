@@ -1,0 +1,9 @@
+entity.fox.settings:
+  title: 'Fox'
+  description: 'Fox Entity Settings'
+  route_name: entity.fox.settings
+  parent: system.admin_structure
+entity.fox.collection:
+  title: 'Foxes'
+  route_name: entity.fox.collection
+  parent: system.admin_content

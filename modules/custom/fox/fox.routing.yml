@@ -1,0 +1,7 @@
+entity.fox.settings:
+  path: 'admin/structure/fox'
+  defaults:
+    _form: '\Drupal\fox\Form\FoxSettingsForm'
+    _title: 'Fox Settings'
+  requirements:
+    _permission: 'administer fox'

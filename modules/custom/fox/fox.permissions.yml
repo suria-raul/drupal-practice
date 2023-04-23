@@ -1,0 +1,11 @@
+administer fox:
+  title: Administer fox
+  restrict access: true
+view fox:
+  title: View fox
+edit fox:
+  title: Edit fox
+delete fox:
+  title: Delete fox
+create fox:
+  title: Create fox
