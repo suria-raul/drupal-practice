@@ -1,0 +1,7 @@
+puppy_controller.puppy:
+  path: 'puppy'
+  defaults:
+    _title: 'Puppy Controller'
+    _controller: '\Drupal\puppy_controller\Controller\PuppyController::puppy'
+  requirements:
+    _permission: 'access content'
