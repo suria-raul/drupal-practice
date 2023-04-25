@@ -1,0 +1,8 @@
+name: AR Rest
+description: Just a testing rest resource
+type: module
+core_version_requirement: ^9 || ^10
+package: Custom
+dependencies:
+  - drupal:rest
+  - drupal:restui
