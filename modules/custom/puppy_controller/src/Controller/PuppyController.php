@@ -4,13 +4,10 @@ namespace Drupal\puppy_controller\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Datetime\DateFormatterInterface;
-use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class PuppyController extends ControllerBase {
-
   protected DateFormatterInterface $dateFormatter;
-
   public function __construct(DateFormatterInterface $dateFormatter) {
     $this->dateFormatter = $dateFormatter;
   }
@@ -22,7 +19,7 @@ class PuppyController extends ControllerBase {
   }
 
   public function puppy() {
-    dump($this->entityTypeManager());
+    dump(\Drupal::service('a_service.say')->say());
 
     die();
   }

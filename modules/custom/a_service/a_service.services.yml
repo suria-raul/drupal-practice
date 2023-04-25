@@ -1,0 +1,3 @@
+services:
+  a_service.say:
+    class: Drupal\a_service\Service\AService

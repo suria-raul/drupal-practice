@@ -1,0 +1,5 @@
+name: AService
+description: Just a random service for testing creating service
+type: module
+core_version_requirement: ^9 || ^10
+package: Custom

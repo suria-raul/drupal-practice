@@ -3,3 +3,5 @@ description: Puppy Controller For testing anything
 type: module
 core_version_requirement: ^9 || ^10
 package: Custom
+dependencies:
+  - a_service
