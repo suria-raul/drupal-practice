@@ -15,9 +15,10 @@ use Drupal\rest\ResourceResponse;
  *   }
  * )
  */
-class ArticlesGetResource extends ResourceBase{
+class ArticlesGetResource extends ResourceBase {
 
-  public function get() {
+  public function get()
+  {
     $nids = \Drupal::entityQuery('node')
       ->accessCheck(false)
       ->condition('status', 1)
