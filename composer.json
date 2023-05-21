@@ -28,6 +28,7 @@
         "drupal/pathauto": "^1.11",
         "drupal/restui": "^1.21",
         "drupal/routes_list": "^6.2",
+        "drupal/webform": "^6.2@beta",
         "drupal/webprofiler": "^10.0",
         "drush/drush": "^11.5",
         "kint-php/kint": "^3.3",
